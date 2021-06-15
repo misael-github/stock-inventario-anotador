@@ -1,9 +1,3 @@
-/*const usuario = {nombre: "juan"}
-localStorage.setItem("usuario", JSON.stringify(usuario))
-
-let user = JSON.parse( localStorage.getItem("usuario"))
-
-console.log(user.nombre)*/
 //  CAPTURO EL ELEMENTO FORM
 
 const form = document.querySelector("form");
@@ -13,6 +7,8 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault()
+    alert("¡Producto añadido!")
+    
 
 // CAPTURO LOS DATOS QUE INGRESA EL USUARIO EN LOS INPUT 
 const nombre = document.querySelector("#nombre")
