@@ -1,0 +1,45 @@
+nav {
+    background-color: #00af91;
+}
+
+body {
+    background-color:  rgb(219, 210, 210);
+}
+
+
+.formulario{
+    display:flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.table{
+    margin: 3%;
+    width: 95%;
+    box-shadow: 5px 0px 10px 0px black;
+    border-radius: 0.2rem;
+}
+
+.basetabla{
+    display: flex;
+    justify-content: center;
+}
+
+.btn1 {
+    margin-top: 2%;
+    margin-left: 7%;
+}
+
+.btn-danger {
+    margin-top: 2%;
+    color:white;
+}
+
+.btn3, .btn1 {
+    background-color: #00af91;
+    color:white;
+}
+
+h2{
+    margin-top: 3%;
+    margin-left: 5%;
