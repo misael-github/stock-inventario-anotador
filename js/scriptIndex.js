@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //DECLARAMOS UNA VARIABLE AFUERA PARA QUE SE VAYA LLENADO EL ID(#) DE LA TABLA, POR CADA VUELTA QUE DA EL FOREACH.
     let variableNúmero = 0;
     //RECORREMOS LOS PRODUCTOS CON FOREACH.
+    // console .log(reciboProductos[0].precio)
     reciboProductos.forEach(producto => {
         const tr = document.createElement('tr'); //ES LA LINEA DE LA TABLA DE BOOTSTRAP
         const th = document.createElement('th'); //COLUMNA DONDE VAN LOS NÚMEROS
@@ -33,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tr.appendChild(td3);// A TR LE ASIGNO COMO HIJO A (TD3 = PRECIO).
         tr.appendChild(button);// A TR LE ASIGNO COMO HIJO AL BUTTON.
     });
-
+    
 //OBTENEMOS EL BOTÓN DE (ELIMINAR TODO) CON SU CLASE DE BOOTSTRAP, Y GUARDAMOS LA POSICIÓN EN LA VARIABLE REMOVERTODO.
     let removerTodo = document.querySelector(".btnE"); 
 //CREAMOS LA FUNCIÓN ELIMINAR TODO
@@ -55,4 +56,16 @@ document.addEventListener('DOMContentLoaded', () => {
             trBuscado.innerHTML = '';//LE ASIGNAMOS EL DATO VACÍO AL TR, ASÍ LO ELIMINA DE LA TABLA.
         }     
     })
+
+// const total = document.getElementById("priceTotal") // me devuelve NaN todo esto
+// let precio = Number((reciboProductos[0].precio))
+// let cantidad = Number((reciboProductos[0].cantidad))
+// total.textContent =  cantidad * precio
+
 });
+
+
+
+
+   
+
